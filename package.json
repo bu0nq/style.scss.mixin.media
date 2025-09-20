@@ -1,20 +1,24 @@
 {
-  "name": "@bu0nq/style.scss.mixin.media",
+  "name": "@bu0nq/style.scss.mixin.media-breakpoint",
   "version": "0.1.0",
-  "description": "Package for integrating Style.SCSS.Mixin.Media",
-  "main": "media.scss",
+  "description": "Package for integrating Style.SCSS.Mixin.MediaBreakpoint",
+  "main": "media-breakpoint.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "@bu0nq/style.scss.constant.breakpoint": "github:bu0nq/style.scss.constant.breakpoint",
+    "@bu0nq/style.scss.function.rem": "github:bu0nq/style.scss.function.rem"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bu0nq/style.scss.mixin.media.git"
+    "url": "git+https://github.com/bu0nq/style.scss.mixin.media-breakpoint.git"
   },
   "keywords": [
     "style",
     "scss",
     "mixin",
-    "media"
+    "media-breakpoint"
   ],
   "author": {
     "name": "bu0nq",
@@ -22,9 +26,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bu0nq/style.scss.mixin.media/issues"
+    "url": "https://github.com/bu0nq/style.scss.mixin.media-breakpoint/issues"
   },
-  "homepage": "https://github.com/bu0nq/style.scss.mixin.media#readme",
+  "homepage": "https://github.com/bu0nq/style.scss.mixin.media-breakpoint#readme",
   "publishConfig": {
     "access": "public"
   }
