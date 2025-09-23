@@ -1,6 +1,12 @@
 @use "@bu0nq/style.scss.constant.breakpoint/breakpoint" as *;
 @use "@bu0nq/style.scss.function.rem/rem" as *;
 
+@mixin media-breakpoint-xs($value: rem($breakpoint-xs)) {
+  @media (width >= $value) {
+    @content;
+  }
+}
+
 @mixin media-breakpoint-sm($value: rem($breakpoint-sm)) {
   @media (width >= $value) {
     @content;
@@ -31,8 +37,8 @@
   }
 }
 
-@mixin media-breakpoint-3xl($value: rem($breakpoint-3xl)) {
-  @media (width >= $value) {
+@mixin media-breakpoint-max-xs($value: rem($breakpoint-xs)) {
+  @media (width < $value) {
     @content;
   }
 }
@@ -67,8 +73,8 @@
   }
 }
 
-@mixin media-breakpoint-max-3xl($value: rem($breakpoint-3xl)) {
-  @media (width < $value) {
+@mixin media-breakpoint-min-xs($value: rem($breakpoint-xs)) {
+  @media (width > $value) {
     @content;
   }
 }
@@ -98,12 +104,6 @@
 }
 
 @mixin media-breakpoint-min-2xl($value: rem($breakpoint-2xl)) {
-  @media (width > $value) {
-    @content;
-  }
-}
-
-@mixin media-breakpoint-min-3xl($value: rem($breakpoint-3xl)) {
   @media (width > $value) {
     @content;
   }
