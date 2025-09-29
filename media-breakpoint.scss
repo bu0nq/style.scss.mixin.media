@@ -1,109 +1,108 @@
-@use "@bu0nq/style.scss.constant.breakpoint/breakpoint" as *;
 @use "@bu0nq/style.scss.function.rem/rem" as *;
 
-@mixin media-breakpoint-xs($value: rem($breakpoint-xs)) {
+@mixin media-breakpoint-xs($value: rem(480px)) {
   @media (width >= $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-sm($value: rem($breakpoint-sm)) {
+@mixin media-breakpoint-sm($value: rem(640px)) {
   @media (width >= $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-md($value: rem($breakpoint-md)) {
+@mixin media-breakpoint-md($value: rem(768px)) {
   @media (width >= $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-lg($value: rem($breakpoint-lg)) {
+@mixin media-breakpoint-lg($value: rem(1024px)) {
   @media (width >= $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-xl($value: rem($breakpoint-xl)) {
+@mixin media-breakpoint-xl($value: rem(1280px)) {
   @media (width >= $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-2xl($value: rem($breakpoint-2xl)) {
+@mixin media-breakpoint-2xl($value: rem(1536px)) {
   @media (width >= $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-max-xs($value: rem($breakpoint-xs)) {
+@mixin media-breakpoint-max-xs($value: rem(480px)) {
   @media (width < $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-max-sm($value: rem($breakpoint-sm)) {
+@mixin media-breakpoint-max-sm($value: rem(640px)) {
   @media (width < $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-max-md($value: rem($breakpoint-md)) {
+@mixin media-breakpoint-max-md($value: rem(768px)) {
   @media (width < $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-max-lg($value: rem($breakpoint-lg)) {
+@mixin media-breakpoint-max-lg($value: rem(1024px)) {
   @media (width < $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-max-xl($value: rem($breakpoint-xl)) {
+@mixin media-breakpoint-max-xl($value: rem(1280px)) {
   @media (width < $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-max-2xl($value: rem($breakpoint-2xl)) {
+@mixin media-breakpoint-max-2xl($value: rem(1536px)) {
   @media (width < $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-min-xs($value: rem($breakpoint-xs)) {
+@mixin media-breakpoint-min-xs($value: rem(480px)) {
   @media (width > $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-min-sm($value: rem($breakpoint-sm)) {
+@mixin media-breakpoint-min-sm($value: rem(640px)) {
   @media (width > $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-min-md($value: rem($breakpoint-md)) {
+@mixin media-breakpoint-min-md($value: rem(768px)) {
   @media (width > $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-min-lg($value: rem($breakpoint-lg)) {
+@mixin media-breakpoint-min-lg($value: rem(1024px)) {
   @media (width > $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-min-xl($value: rem($breakpoint-xl)) {
+@mixin media-breakpoint-min-xl($value: rem(1280px)) {
   @media (width > $value) {
     @content;
   }
 }
 
-@mixin media-breakpoint-min-2xl($value: rem($breakpoint-2xl)) {
+@mixin media-breakpoint-min-2xl($value: rem(1536px)) {
   @media (width > $value) {
     @content;
   }

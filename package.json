@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@bu0nq/style.scss.constant.breakpoint": "github:bu0nq/style.scss.constant.breakpoint",
-    "@bu0nq/style.scss.function.rem": "github:bu0nq/style.scss.function.rem"
+    "@bu0nq/style.scss.function.rem": "^0.1.0"
   },
   "repository": {
     "type": "git",
